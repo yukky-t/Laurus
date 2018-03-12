@@ -3,17 +3,17 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Laurus | Miracle Nikki Optimal Coordinating Advisor</title>
+	<title>Laurus Improved | Miracle Nikki Optimal Coordinating Advisor</title>
 
 	<!-- meta data -->
-	<meta name="author" content="Miku">
 	<meta name="keyword" content="ミラクルニキ,Miracle Nikki,ローラス,Laurus,コーディネート,ツール,攻略">
 	<meta name="description" content="">
 
 	<!-- scripts -->
-	<script src="laurus.min.js?ver=1.12.0" defer></script>
-
 	<!--
+	<script src="laurus.min.js?ver=1.12.0" defer></script>
+	-->
+
 	<script src="features/jquery.min.js" defer></script>
 	<script src="features/jquery.peity.js" defer></script>
 	<script src="features/jquery.perfect-scrollbar.js" defer></script>
@@ -21,7 +21,6 @@
 	<script src="features/toastr.js" defer></script>
 	<script src="features/extensions.js" defer></script>
 	<script src="features/laurus.js" defer></script>
-	-->
 
 	<!-- style / favicon -->
 	<link href="theme.css" rel="stylesheet" type="text/css">
@@ -32,7 +31,7 @@
 	<header id="header">
 		<div id="header-area">
 			<div id="logo-area">
-				<h1><img src="resources/laurus.png" alt="Laurus | Miracle Nikki Optimal Coordinating Advisor"> Laurus :: <span id="current-mode">Welcome</span></h1>
+				<h1><img src="resources/laurus.png" alt="Laurus | Miracle Nikki Optimal Coordinating Advisor">Laurus Improved::<span id="current-mode">Welcome</span></h1>
 			</div>
 			<nav id="general-navgation">
 				<ul>
@@ -403,13 +402,47 @@
 	</article>
 
 	<article id="credit" class="tab">
-		<div id="version"><span id="last-update"></span><span id="appli-name"><span id="appli-title"><img id="appli-icon" alt="laurus-icon" class="lazyload" src="resources/placeholder.png" data-src="resources/laurus-icon.png">Laurus</span><span id="appli-sub-title">Miracle Nikki Optimal Coordinating Advisor</span></span></div>
-		<div id="me"><img id="me-icon" alt="me-icon" class="lazyload" src="resources/placeholder.png" data-src="resources/miku-icon.jpg"><span id="me-name">みく(๑・ω・๑)</span></div>
+		<div id="version">
+			<span id="last-update"></span>
+			<span id="appli-name">
+				<span id="appli-title">
+					<img id="appli-icon" alt="laurus-icon" class="lazyload" src="resources/placeholder.png" data-src="resources/laurus-icon.png">
+					Laurus Improved
+				</span>
+				<span id="appli-sub-title">
+					Miracle Nikki Optimal Coordinating Advisor
+				</span>
+			</span>
+		</div>
 
-		<h4 id="head-nikki">Miracle Nikki</h4>
+		<h4 id="head-nikki">オリジナル</h4>
 		<div id="nikki">
-			<span class="item-group"><span class="label">ユーザー</span><span class="nikki-name">みく</span><span class="nikki-id">1 0000 0969</span></span>
-			<span class="item-group"><span class="label">ギルド</span><span class="nikki-name">くるくるほっぺ</span><span class="nikki-id">245</span></span>
+			<span class="item-group"><span class="label">Original</span><a href="https://miramiku.github.io/Laurus/#">Laurus</a></span>
+			※Improvedへの意見等をこちらに問い合わせるのはご遠慮ください
+		</div>
+
+		<h4 id="head-backbone">Improved版作成の経緯</h4>
+		<div id="donate">
+			<!-- class適用のために違うID使っててすみません(´・ω・｀) css側に本筋と違う変更いれたくなくて。-->
+			<p>
+				私の使い方は、最初に全アイテム所持を基本として、持っていないアイテムが候補に出たら未所持に変更というものですが、
+				現在のAdvisorだと新規アイテムを入手した場合にハイスコア更新が可能なことに気付きにくいと感じました。
+			</p>
+			<p>
+				そこで、未所持のアイテムも含めて表示し、所持してる一番高いスコアのアイテムまでスクロールする、という形に修正しました。
+			</p>
+			<img src="resources/non-posession-advisor.png">
+			<p>
+				副作用として縦横ともに広がり、上位1~3アイテムの移動時は表示箇所ががたつき、未所持データも計算するので処理が遅くなった（はず）という問題もありますが、
+				個人的にはそれを差し引いても使い易くなりました。
+			</p>
+			<p>
+				このImproved版の公開はその使い勝手を試してもらうためで、反応が良ければ本家への取り込みをお願いしようと思います。
+				（副作用あるのでなるべくモード切り替えもセットで）
+			</p>
+			<p>
+				そのためあまり長期的に公開する予定はありませんのでご了承ください。
+			</p>
 		</div>
 
 		<h4 id="head-resources">Resources</h4>
@@ -418,29 +451,14 @@
 			<span class="item-group"><span class="label">Wardrobe Evidences</span><span class="resource"><a href="https://onedrive.live.com/?authkey=%21AER0M9Q_ZMTcEXI&id=716B8A626FB713C5%21154334&cid=716B8A626FB713C5"><img alt="onedrive" class="lazyload" src="resources/placeholder.png" data-src="resources/onedrive.png"> Laurus Wardrobe Evidences</a></span></span>
 			<span class="item-group"><span class="label">Processed Wardrobe Database</span><span class="resource"><a href="resources/wardrobe.json"><span class="laurus-icon">&#x2633;</span> wardrobe.json</a></span></span>
 			<span class="item-group"><span class="label">Stage Database</span><span class="resource"><a href="resources/stages.unpack.json"><span class="laurus-icon">&#x2633;</span> stages.unpack.json</a></span></span>
-			<span class="item-group"><span class="label">Repository</span><span class="resource"><a href="https://github.com/miramiku/Laurus"><span class="laurus-icon">&#x2631;</span> miramiku/Laurus</a></span></span>
+			<span class="item-group"><span class="label">Original Repository</span><span class="resource"><a href="https://github.com/miramiku/Laurus"><span class="laurus-icon">&#x2631;</span> miramiku/Laurus</a></span></span>
+			<span class="item-group"><span class="label">Modified Repository</span><span class="resource"><a href="https://github.com/yukyt/Laurus"><span class="laurus-icon">&#x2631;</span> yukyt/Laurus</a></span></span>
 		</div>
 
-		<h4 id="head-sns">Contact and SNS</h4>
+		<h4 id="head-sns">Modifier Contact</h4>
 		<div id="sns">
-			<span class="item-group"><span class="label">Twitter</span><span class="account"><a href="https://twitter.com/miramiku"><span class="laurus-icon">&#x2630;</span> @miramiku</a></span></span>
-			<span class="item-group"><span class="label">Github</span><span class="account"><a href="https://github.com/miramiku"><span class="laurus-icon">&#x2631;</span> miramiku</a></span></span>
-			<span class="item-group"><span class="label">E-mail</span><span class="account"><img src="resources/me-mail.png" alt="me-mail"></span></span>
-		</div>
-
-		<h4 id="head-donate">Donate</h4>
-		<div id="donate">
-			<p>
-				Laurus に関する過去の評価ならびに今後の維持にあたりご支援いただけると幸いです。<br>
-				いただいお気持ちは Laurus の制作環境などの整備に充当させていだだきます。<br>
-				金額はお気持ちで構いません。15円から1円単位で指定可能です。
-			</p>
-			<span class="item-group"><span class="label">Amazon Gift Card</span><span class="donate"><a href="https://www.amazon.co.jp/hz/wishlist/ls/A104M31IA2D"><img alt="amazon" class="lazyload" src="resources/placeholder.png" data-src="resources/amazon.png"> Laurus Donate</a></span></span>
-		</div>
-
-		<h4 id="head-discussions">Discussions</h4>
-		<div id="discussions">
-			<p>使用方法でわからない事や見つけた不具合、機能の提案、その他お気づきの点などありましたら上記のコンタクトまたは下にある <a href="#disqus_thread">コメント欄</a> や <a href="https://github.com/miramiku/Laurus/issues">Laurus の Issues</a> にお願いします。</p>
+			<span class="item-group"><span class="label">Github</span><span class="account"><a href="https://github.com/yukyt"><span class="laurus-icon">&#x2631;</span> yukyt</a></span></span>
+			<span class="item-group"><span class="label">In game</span><span class="account">アレンティー 101506972</span></span>
 		</div>
 
 		<h4 id="head-licenses">Licenses</h4>
@@ -479,6 +497,77 @@
 	</article>
 
 	<article id="changelog" class="tab">
+		<h3 id="head-changelog">Improved版変更履歴</h3>
+		<div id="timeline">
+			<div class="content">
+				<span class="version">v1.11.0-modify3</span><span class="release">2018.03.12</span>
+				<ul class="change-list">
+					<li class="database"><span class="changelog-tab">Laurus :: Advisor</span>
+						<ul>
+							<li>
+									推奨コーデの単一/複数表示モード切り替え機能を追加
+							</li>
+						</ul>
+					</li>
+					<li class="database"><span class="changelog-tab">Laurus :: Wardrobe</span>
+						<ul>
+							<li>
+									アイテム名検索で大文字小文字を区別しないように修正
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="content">
+				<span class="version">v1.11.0-modify2</span><span class="release">2018.03.09</span>
+				<ul class="change-list">
+					<li class="database"><span class="changelog-tab">Laurus</span>
+						<ul>
+							<li>
+									本家の1.11.0を取り込み
+							</li>
+						</ul>
+					</li>
+					<li class="database"><span class="changelog-tab">Laurus :: Advisor</span>
+						<ul>
+							<li>
+									ES2015形式を廃止してES5形式に統一
+							</li>
+						</ul>
+					</li>
+					<li class="database"><span class="changelog-tab">Laurus :: Credit</span>
+						<ul>
+							<li>
+									説明画像を追加
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="content">
+				<span class="version">v1.10.3-modify1</span><span class="release">2018.03.04</span>
+				<ul class="change-list">
+					<li class="database"><span class="changelog-tab">Laurus :: Advisor</span>
+						<ul>
+							<li>
+									推奨コーディネートに非所持アイテムも表示されるようにしました。
+							</li>
+							<li>
+									推奨コーディネートのプレビューアイテムを２件まで表示されるようにしました。
+							</li>
+						</ul>
+					</li>
+					<li class="database"><span class="changelog-tab">Laurus :: Credit</span>
+						<ul>
+							<li>
+									Improved版公開にあたって背景や連絡先諸々を書き換え
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
 		<h3 id="head-changelog">変更履歴</h3>
 		<div id="timeline">
 			<div class="content" data-nikki="v2.9.0 (3) シナリオ第１４章解放＆ MIRACLE デビュー LIVE">
@@ -502,7 +591,7 @@
 					<li class="credit"><span class="changelog-tab">Laurus Improved was Contributed by</span>
 						<ul>
 							<li>アレンティー：1 0150 6972</li>
-							<li><span class="laurus-icon">&#x2631;</span> <a href="https://github.com/yukky-t">yukky-t(๑•̀ㅂ•́)و✧</a></li>
+							<li><span class="laurus-icon">&#x2631;</span> <a href="https://github.com/yukyt">yukyt(๑•̀ㅂ•́)و✧</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -631,54 +720,26 @@
 			ミラクルニキがアップデートなどによりアイテムが追加された場合は適時登録していきますが、容易に入手できないものも多数あるのである程度の日数を要します。
 			データを用意でき次第にデータベースに反映します。お待たせして申し訳ございませんが、ご了承いただけたら幸いです。
 		</p>
-		<p class="my-text">
-			ブラックリスト・ホワイトリストの登録状況においても同様に情報が入りしたい適宜追加していきます。
-			Laurus ご利用中にブラックリスト未登録アイテムに当たってしまった場合は申し訳ございません。
-			コメント欄などでご報告いただけると幸いです。
-		</p>
 
 		<h3 id="head-update">追加予定機能</h3>
 		<ul>
-			<li>アイテムデータベースに以下の項目を追加中です（入力作業がおわりません）
-				<ul>
-					<li>入手方法</li>
-					<li>フレーバーテキスト</li>
-				</ul>
-			</li>
-			<li>入手方法の逆引き、衣装制作などで最終的に必要数の計算する機能</li>
-			<li>帽子マニアやビサンティウムの歌といった複数スロットのアイテムは現在推奨対象外（スコアは計算されています）</li>
+			<li>通常の表示モードとの切り替え（うまくできたら本家にpull-requestで取り込み依頼）</li>
 		</ul>
 	</article>
 
 	<footer>
+		オリジナル:
 		<ul class="enumeration">
-			<li><a href="#" id="credit-me"><img src="resources/miku-icon.jpg" class="profile-icon lazyload" alt="miku"> みく(๑・ω・๑)</a></li>
+			<li><a href="#" id="credit-me"><img src="resources/miku-icon.jpg" class="profile-icon" alt="miku"> みく(๑・ω・๑)</a></li>
 			<li id="footer-twitter"><a href="https://twitter.com/miramiku"><span class="laurus-icon">&#x2630;</span> @miramiku</a></li>
 			<li id="footer-repository"><a href="https://github.com/miramiku/Laurus"><span class="laurus-icon">&#x2631;</span> SourceCode</a></li>
 		</ul>
+		Improved版:
+		<ul class="enumeration">
+			<li><a href="#" id="credit-me"> yukyt(๑•̀ㅂ•́)و✧</a></li>
+			<li id="footer-repository"><a href="https://github.com/yukyt/Laurus"><span class="laurus-icon">&#x2631;</span> SourceCode</a></li>
+		</ul>
 	</footer>
-
-	<div id="disqus-space">
-		<p id="comment-attention">
-			名前を入力しようとすると表示される「ゲストとして投稿する」にチェックを入れるとDISQUSに登録しなくてもコメントすることができます。<br>
-			メールアドレスは入力必要ですが DISQUS で管理され、投稿したコメントに表示されることはありません。
-			ただし、ログインせずゲストとして投稿するとコメントが承認制となります（DISQUS にログインすると承認の必要なくすぐにコメントが表示されます）。
-			架空のメールアドレスでも可能ですのでお気軽にどうぞ！
-		</p>
-		<div id="disqus_thread"></div>
-		<script>
-			var disqus_config = function () {
-				this.page.url = "https://miramiku.github.io/Laurus/";
-				this.page.identifier = "Laurus";
-			};
-			( function () {
-				var d = document, s = d.createElement( 'script' );
-				s.src = 'https://laurus.disqus.com/embed.js';
-				s.setAttribute( 'data-timestamp', +new Date() );
-				( d.head || d.body ).appendChild( s );
-			}() );
-		</script>
-	</div>
 
 	<div id="dialogue-pane"></div>
 	<div id="dialogue"></div>
@@ -933,19 +994,8 @@
 			<li><a href="#head-register">アイテムの登録について</a></li>
 			<li><a href="#head-update">追加予定機能</a></li>
 		</ul>
-		<ul id="jump2disqus"><li><a href="#disqus_thread">コメント</a></li></ul>
 	</div>
 
-	<script>
-		( function ( i, s, o, g, r, a, m ) {
-			i[ 'GoogleAnalyticsObject' ] = r; i[ r ] = i[ r ] || function () {
-				( i[ r ].q = i[ r ].q || [] ).push( arguments )
-			}, i[ r ].l = 1 * new Date(); a = s.createElement( o ),
-				m = s.getElementsByTagName( o )[ 0 ]; a.async = 1; a.src = g; m.parentNode.insertBefore( a, m )
-		} )( window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga' );
-		ga( 'create', 'UA-98310829-1', 'auto' );
-		ga( 'send', 'pageview' );
-	</script>
 </body>
 
 </html>
